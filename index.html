@@ -6,23 +6,23 @@
     <meta name="viewport" content="width=device-width">
     <title>Cindy Lee - Portfolio</title>
     <meta name="description" content="I am an aspiring developer, come check out my work">
-    <link href="index.css" rel="stylesheet" type="text/css" />
+    <link href="indexDraftTwo.css" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <nav role="navigation">
         <div class="logo">
-            <a class="scroll" href="projects">Cindy Lee</a>
+            <a class="scroll" href="#projects">Cindy Lee</a>
         </div>
         <div class="menuToggle">
             <span></span>
             <span></span>
             <span></span>
             <ul class="menu">
-                <li><a class="menuLink" href="projects">Projects</a></li>
-                <li><a class="menuLink" href="about">About</a></li>
-                <li><a class="menuLink" href="contact">Contact</a></li>
+                <li>Projects</li>
+                <li>About</li>
+                <li>Contact</li>
             </ul>
         </div>
     </nav>
@@ -30,31 +30,18 @@
     <main>
         <header>
             <section class="intro">
-                <h1>Hi, I'm Cindy</h1>
-                <p>
-                    Welcome to my portfolio
-                </p>
+                <h1>Intro</h1>
             </section>
         </header>
-        <section class="col">
-            <h2>National Parks Quiz App</h2>
-            <img class="npQuizPic" src="" alt="screenshot of quiz app" />
-            <p>This quiz tests your knowledge of United States national parks.</p>
-            <p>JavaScript, jQuery</p>
-            <p><a href="https://repl.it/@cindyxlee/national-parks-quiz">Project</a></p>
-            <p><a href="https://github.com/cindyxlee/Quiz-App">Code</a></p>
+        <section class="col" id="projects">
+            <h2>Projects</h2>
         </section>
-        <section class="col">
+        <section class="col" id="about">
             <h2>About</h2>
-            <img class="aboutPic" src="" alt="a picture of Cindy" />
-            <p>I am currently enrolled in Thinkful’s Full Stack Web Development program. My love of figuring out how
-                things work has translated to web development where I am learning how websites are built - and even
-                building them myself! If my brows aren’t furrowed over code, you can find me curled up with a book and
-                my pupper or out on the trail.</p>
         </section>
     </main>
-    <footer role="contact">Footer
-
+    <footer role="contact" id="contact">
+        <h2>Contact</h2>
     </footer>
 </body>
 
