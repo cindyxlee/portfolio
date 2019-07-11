@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width">
     <title>Cindy Lee - Portfolio</title>
     <meta name="description" content="I am an aspiring developer, come check out my work">
-    <link href="indexDraftTwo.css" rel="stylesheet" type="text/css" />
+    <link href="index.css" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -15,33 +17,49 @@
         <div class="logo">
             <a class="scroll" href="#projects">Cindy Lee</a>
         </div>
-        <div class="menuToggle">
-            <span></span>
-            <span></span>
-            <span></span>
-            <ul class="menu">
-                <li>Projects</li>
-                <li>About</li>
-                <li>Contact</li>
-            </ul>
+        <div class="menu" id="menuNav">
+            <a href="javascript:void(0);" class="icon" onclick="toggleFunction()"><button class="dropbtn"><i
+                        class="fa fa-bars"></i></button>
+                <div class="dropdown-content">
+                    <a class="menuLink" href="#projects">Projects</a>
+                    <a class="menuLink" href="#about">About</a>
+                    <a class="menuLink" href="#contact">Contact</a>
+                </div>
+            </a>
         </div>
     </nav>
 
     <main>
         <header>
             <section class="intro">
-                <h1>Intro</h1>
+                <h1>Hi, I'm Cindy</h1>
+                <p>
+                    Welcome to my portfolio
+                </p>
             </section>
         </header>
         <section class="col" id="projects">
-            <h2>Projects</h2>
+            <h2>National Parks Quiz App</h2>
+            <img class="npQuizPic" src="https://i.paste.pics/129dd1e4379f1ff685d21e8ccf5d47bf.png"
+                alt="screenshot of quiz app" />
+            <p>This quiz tests your knowledge of United States national parks.</p>
+            <p>JavaScript, jQuery</p>
+            <p><a href="https://national-parks-quiz--cindyxlee.repl.co/" target="_blank">Project</a></p>
+            <p><a href="https://github.com/cindyxlee/Quiz-App" target="_blank">Code</a></p>
         </section>
         <section class="col" id="about">
             <h2>About</h2>
+            <p>I am currently enrolled in Thinkful’s Full Stack Web Development program. My love of figuring out how
+                things work has translated to web development where I am learning how websites are built - and even
+                building them myself! If my brows aren’t furrowed over code, you can find me curled up with a book and
+                my pupper or out on the trail.</p>
         </section>
     </main>
     <footer role="contact" id="contact">
         <h2>Contact</h2>
+        <a class="contactLinks" href="mailto:leecindyyk@gmail.com?Subject=Greetings" target="_blank">Mail</a>
+        <a class="contactLinks" href="https://github.com/cindyxlee/" target="_blank">GitHub</a>
+        <a class="contactLinks" href="www.linkedin.com/in/lee-cindy" target="_blank">LinkedIn</a>
     </footer>
 </body>
 
